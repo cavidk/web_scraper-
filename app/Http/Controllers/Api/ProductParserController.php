@@ -145,6 +145,5 @@ class ProductParserController extends Controller
     }
     //TODO  (make parse data save database and pay attention duplication)
     //TODO  (make HTML side HTML structure can change any time)
-    //TODO  (make it public and learn how to publish any site on production)
 
 }
