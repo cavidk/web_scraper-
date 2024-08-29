@@ -70,7 +70,10 @@ class ProductParserController extends Controller
 
         foreach ($patterns as $pattern) {
             if (preg_match($pattern, $data, $matches)) {
-                return trim($matches[1]);
+               return  strip_tags(
+                   trim($matches[1])
+               );
+
             }
         }
 
@@ -145,6 +148,4 @@ class ProductParserController extends Controller
     }
     //TODO  (make parse data save database and pay attention duplication)
     //TODO  (make HTML side HTML structure can change any time)
-    //TODO  (make it public and learn how to publish any site on production)
-
 }
