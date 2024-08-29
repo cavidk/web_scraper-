@@ -33,7 +33,6 @@ class ProductParserController extends Controller
 
             $pq = phpQuery::newDocumentHTML($data);
 
-            // Use regex to extract the title, price, and images
             $title = $this->extractTitleWithRegex($data);
             $price = $this->extractPriceWithRegex($data);
             $images = $this->extractImagesWithRegex($data);
