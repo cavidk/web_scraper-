@@ -49,7 +49,7 @@
     function showJson() {
     var url = document.getElementById('url').value;
     if (url) {
-    var apiUrl = 'http://127.0.0.1:8000/api/parse-url?url=' + encodeURIComponent(url);
+    var apiUrl = '/api/parse-url?url=' + encodeURIComponent(url);
     window.location.href = apiUrl;
     } else {
     alert('Please enter a URL.');
